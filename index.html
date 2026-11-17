@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Undangan Pernikahan</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Ballet&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MUSIK -->
+<audio id="weddingMusic" loop preload="auto">
+    <source src="assets/lagu.mp4" type="audio/mp4">
+</audio>
+
+<!-- COVER -->
+<div class="cover" id="cover">
+    <div class="cover-content">
+        <p>UNDANGAN PERNIKAHAN</p>
+        <h1>Raro & Roro</h1>
+        <p>MINGGU, 20 JUNI 2027</p>
+        <p>Tanpa Mengurangi Rasa Hormat. Kami Mengundang</p>
+        <p>Bapak/Ibu/Saudara/i untuk hadir di acara kami.</p>
+
+        <button class="tombol" onclick="openInvitation()">
+            BUKA UNDANGAN
+        </button>
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <p>THE WEDDING OF</p>
+
+        <h1>Raro & Roro</h1>
+
+        <p class="salam">
+            ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ
+        </p>
+
+        <p class="deskripsi">
+            Dengan memohon rahmat dan ridho Allah SWT,
+            kami bermaksud menyelenggarakan pernikahan kami.
+        </p>
+
+        <img src="assets/raka-laras.jpeg"
+             class="foto-utama foto-scroll"
+             alt="Foto Raro dan Roro">
+
+        <p>Minggu, 20 Juni 2027</p>
+
+        <a href="#acara" class="tombol">LIHAT DETAIL ACARA</a>
+    </div>
+</section>
+
+<!-- MEMPELAI -->
+<section class="mempelai">
+    <p class="judul">KEDUA MEMPELAI</p>
+
+    <h2 class="judul judul-script">Raro & Roro</h2>
+
+    <div class="mempelai-container">
+
+        <div class="mempelai-card">
+            <img src="assets/raro.jpeg" class="foto-scroll" alt="Raro">
+            <h3>Raro</h3>
+            <p>Putra dari</p>
+            <p>Bapak ... & Ibu ...</p>
+        </div>
+
+        <div class="mempelai-card">
+            <img src="assets/roro.jpeg" class="foto-scroll" alt="Roro">
+            <h3>Roro</h3>
+            <p>Putri dari</p>
+            <p>Bapak ... & Ibu ...</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="countdown">
+    <p class="judul">MENUJU HARI BAHAGIA</p>
+
+    <h2 class="judul-script countdown-title">
+        20 Juni 2027
+    </h2>
+
+    <div class="countdown-container">
+        <div class="count-box">
+            <strong id="days">0</strong>
+            <span>HARI</span>
+        </div>
+
+        <div class="count-box">
+            <strong id="hours">0</strong>
+            <span>JAM</span>
+        </div>
+
+        <div class="count-box">
+            <strong id="minutes">0</strong>
+            <span>MENIT</span>
+        </div>
+
+        <div class="count-box">
+            <strong id="seconds">0</strong>
+            <span>DETIK</span>
+        </div>
+    </div>
+</section>
+
+<!-- ACARA -->
+<section class="acara" id="acara">
+    <p class="judul">WAKTU DAN TEMPAT</p>
+
+    <h2 class="judul-script section-title">
+        Rangkaian Acara
+    </h2>
+
+    <div class="acara-container">
+
+        <div class="acara-card">
+            <h3>Akad Nikah</h3>
+            <p>Minggu, 20 Juni 2027</p>
+            <p>Pukul 08.00 – 10.00 WITA</p>
+            <p>Tempat: Mujur, Lombok Tengah</p>
+        </div>
+
+        <div class="acara-card">
+            <h3>Resepsi</h3>
+            <p>Minggu, 20 Juni 2027</p>
+            <p>Pukul 10.00 WITA – Selesai</p>
+            <p>Tempat: Mujur, Lombok Tengah</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- KISAH KAMI 1 -->
+<section class="kisah">
+    <p class="judul">CERITA CINTA KAMI</p>
+
+    <h2 class="judul-script section-title">
+        Kisah Kami
+    </h2>
+
+    <div class="kisah-container">
+        <div class="kisah-item">
+            <img src="assets/foto1.jpeg"
+                 class="foto-scroll"
+                 alt="Awal Bertemu">
+
+            <div class="kisah-teks">
+                <h3>Awal Bertemu</h3>
+                <p>
+                    Semua berawal dari sebuah pertemuan sederhana.
+                    Dari perkenalan itu, kami mulai mengenal satu sama lain
+                    dan menemukan kenyamanan dalam kebersamaan.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- KISAH KAMI 2 -->
+<section class="kisah">
+    <div class="kisah-container">
+        <div class="kisah-item kedua">
+            <img src="assets/foto2.jpeg"
+                 class="foto-scroll"
+                 alt="Menuju Hari Bahagia">
+
+            <div class="kisah-teks">
+                <h3>Menuju Hari Bahagia</h3>
+                <p>
+                    Waktu membawa kami melewati berbagai cerita.
+                    Dengan doa, keyakinan, dan harapan,
+                    kami memutuskan untuk melangkah bersama
+                    menuju kehidupan baru.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALERI -->
+<section class="galeri">
+    <p class="judul">MOMEN KEBERSAMAAN</p>
+
+    <h2 class="judul-script section-title">
+        Galeri Foto
+    </h2>
+
+    <div class="galeri-container">
+        <img src="assets/foto1.jpeg" class="foto-scroll" alt="Galeri 1">
+        <img src="assets/foto2.jpeg" class="foto-scroll" alt="Galeri 2">
+        <img src="assets/foto3.jpeg" class="foto-scroll" alt="Galeri 3">
+        <img src="assets/foto4.jpeg" class="foto-scroll" alt="Galeri 4">
+    </div>
+</section>
+
+<!-- SAVE THE DATE -->
+<section class="save-date">
+    <h2>Save The Date</h2>
+
+    <p class="ayat-arab">
+        وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنْفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ
+    </p>
+
+    <p class="ayat-terjemahan">
+        Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia
+        menciptakan pasangan-pasangan untukmu dari (jenis) dirimu
+        sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan
+        di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada
+        yang demikian itu benar-benar terdapat tanda-tanda
+        (kebesaran Allah) bagi kaum yang berpikir.
+    </p>
+
+    <p class="ayat-referensi">AR-RUM AYAT 21</p>
+</section>
+
+<!-- LOKASI -->
+<section class="lokasi">
+    <p class="judul">LOKASI ACARA</p>
+
+    <h2 class="judul-script section-title">
+        Google Maps
+    </h2>
+
+    <p class="alamat">
+        69X5+9C9 Mujur, Kabupaten Lombok Tengah,
+        Nusa Tenggara Barat, Indonesia
+    </p>
+
+    <iframe
+        src="https://maps.google.com/maps?q=69X5%2B9C9%20Mujur%20Kabupaten%20Lombok%20Tengah%20Nusa%20Tenggara%20Barat&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+
+    <br>
+
+    <a class="tombol"
+       href="https://www.google.com/maps/search/?api=1&query=69X5%2B9C9%20Mujur%20Kabupaten%20Lombok%20Tengah%20Nusa%20Tenggara%20Barat"
+       target="_blank"
+       rel="noopener">
+        BUKA GOOGLE MAPS
+    </a>
+</section>
+
+<!-- RSVP -->
+<section class="rsvp">
+    <p class="judul">KONFIRMASI KEHADIRAN</p>
+
+    <h2 class="judul-script section-title">RSVP</h2>
+
+    <form class="rsvp-form" id="rsvpForm">
+
+        <input type="text"
+               id="nama"
+               placeholder="Nama Lengkap"
+               required>
+
+        <select id="kehadiran" required>
+            <option value="">Pilih Konfirmasi Kehadiran</option>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
+        </select>
+
+        <textarea
+            id="ucapan"
+            placeholder="Tuliskan ucapan dan doa..."></textarea>
+
+        <button type="submit" class="tombol">
+            KIRIM KONFIRMASI
+        </button>
+
+    </form>
+</section>
+
+<!-- AMPLOP DIGITAL -->
+<section class="amplop">
+    <p class="judul">TANDA KASIH</p>
+
+    <h2 class="judul-script section-title">
+        Amplop Digital
+    </h2>
+
+    <div class="rekening">
+        <h3>BCA</h3>
+        <p>Nomor Rekening</p>
+        <strong id="nomorRekening">99889888</strong>
+        <p>Atas Nama: Raro</p>
+
+        <button class="tombol" onclick="copyRekening()">
+            SALIN NOMOR REKENING
+        </button>
+    </div>
+</section>
+
+<!-- PENUTUP -->
+<section class="penutup">
+    <p class="judul">TERIMA KASIH</p>
+
+    <p class="deskripsi">
+        Merupakan suatu kehormatan dan kebahagiaan
+        bagi kami apabila Bapak/Ibu/Saudara/i
+        berkenan hadir untuk memberikan doa restu.
+    </p>
+
+    <h2>Raro & Roro</h2>
+
+    <p class="deskripsi">Minggu, 20 Juni 2027</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2027 Undangan Pernikahan Raro & Roro</p>
+    <p>Terima kasih atas doa dan restunya.</p>
+</footer>
+
+<!-- TOMBOL MUSIK -->
+<button class="music-button"
+        id="musicButton"
+        onclick="toggleMusic()"
+        aria-label="Putar atau jeda musik">
+    ▶
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
